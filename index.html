@@ -8,9 +8,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="author" content="TemplatesJungle">
-	<meta name="keywords" content="Free, Photography, Portfolio, HTML, Website Template, Bootstrap">
-	<meta name="description" content="Luna is a Photography Portfolio HTML Template built using Bootstrap Framework">
+	<meta name="author" content="Roman Albano">
+	<meta name="keywords" content="Roman Albano">
+	<meta name="description" content="Roman Albano's Personal Portfolio Website">
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -28,23 +28,24 @@
 
 <body>
 	<svg style="display: none;">
-  <symbol id="github" viewBox="0 0 24 24">
-    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.42 7.86 10.95.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2
+		<symbol id="github" viewBox="0 0 24 24">
+			<path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.42 7.86 10.95.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2
     -3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7
     1.16.08 1.78 1.19 1.78 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.72-1.55
     -2.55-.29-5.23-1.28-5.23-5.71 0-1.26.45-2.3 1.19-3.12-.12-.29-.52-1.46.11-3.05
     0 0 .97-.31 3.18 1.19a11.1 11.1 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39
     2.21-1.5 3.18-1.19 3.18-1.19.63 1.59.23 2.76.11 3.05.74.82 1.19 1.86 1.19 3.12
     0 4.44-2.68 5.42-5.23 5.71.41.35.77 1.04.77 2.1 0 1.52-.01 2.75-.01 3.12
-    0 .31.21.68.79.56A10.52 10.52 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/>
-  </symbol>
-</svg>
+    0 .31.21.68.79.56A10.52 10.52 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z" />
+		</symbol>
+	</svg>
 
 	<svg style="display: none;">
-  <symbol id="linkedin" viewBox="0 0 24 24">
-    <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zM8 8h3.8v2.2h.05c.53-1 1.82-2.2 3.75-2.2 4 0 4.75 2.6 4.75 6V24h-4V15c0-2.16-.04-4.94-3-4.94-3 0-3.5 2.35-3.5 4.77V24h-4V8z"/>
-  </symbol>
-</svg>
+		<symbol id="linkedin" viewBox="0 0 24 24">
+			<path
+				d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zM8 8h3.8v2.2h.05c.53-1 1.82-2.2 3.75-2.2 4 0 4.75 2.6 4.75 6V24h-4V15c0-2.16-.04-4.94-3-4.94-3 0-3.5 2.35-3.5 4.77V24h-4V8z" />
+		</symbol>
+	</svg>
 
 	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
 		<defs>
@@ -286,14 +287,14 @@
 		</defs>
 	</svg>
 
-	
+
 
 	<header id="header">
 		<div class="header-wrap d-flex align-items-center justify-content-between p-3" data-aos="fade">
 			<div class="main-logo">
 				<!-- <a href="index.html"><img src="images/Main Text.png" title="Portfo HTML Template"></a> -->
 			</div>
-			
+
 			<nav id="navbar">
 				<input id="menu-toggle" type="checkbox" />
 				<label class="menu-btn" for="menu-toggle">
@@ -302,6 +303,299 @@
 			</nav>
 
 		</div>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			#portfolio {
+				padding: 60px 20px;
+			}
+
+			.section-header {
+				text-align: center;
+				margin-bottom: 40px;
+			}
+
+			.section-title {
+				font-size: 2rem;
+				font-weight: 700;
+				margin-bottom: 10px;
+				color: #333;
+			}
+
+			.section-subtitle {
+				font-size: 1rem;
+				color: #666;
+			}
+
+			.carousel-label {
+				color: #666;
+				font-weight: 600;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				font-size: 0.95rem;
+				text-align: center;
+				margin-bottom: 30px;
+			}
+
+			.carousel-container {
+				max-width: 900px;
+				margin: 0 auto;
+				margin-bottom: 60px;
+			}
+
+			.carousel-wrapper {
+				background: white;
+				border-radius: 12px;
+				overflow: hidden;
+				box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+			}
+
+			.carousel-slide {
+				display: none;
+				padding: 40px 30px;
+				min-height: 400px;
+				animation: fadeIn 0.5s ease-in-out;
+			}
+
+			.carousel-slide.active {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			@keyframes fadeIn {
+				from {
+					opacity: 0;
+				}
+
+				to {
+					opacity: 1;
+				}
+			}
+
+			.carousel-content {
+				display: flex;
+				gap: 30px;
+				align-items: center;
+				width: 100%;
+			}
+
+			.carousel-image {
+				width: 45%;
+				flex-shrink: 0;
+			}
+
+			.carousel-image img {
+				width: 100%;
+				height: auto;
+				border-radius: 10px;
+				object-fit: cover;
+			}
+
+			.carousel-text {
+				width: 55%;
+				flex-grow: 1;
+			}
+
+			.carousel-title {
+				font-size: 1.8rem;
+				font-weight: 700;
+				color: #333;
+				margin-bottom: 10px;
+			}
+
+			.carousel-description {
+				font-size: 1rem;
+				color: #666;
+				line-height: 1.6;
+				margin-bottom: 15px;
+			}
+
+			.carousel-year {
+				font-size: 0.9rem;
+				color: #999;
+				font-weight: 600;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+
+			.section-title-light {
+				color: #ffffff;
+				/* Change to a lighter color */
+			}
+
+			.carousel-controls {
+				display: flex;
+				gap: 15px;
+				justify-content: center;
+				align-items: center;
+				margin-top: 30px;
+			}
+
+			.carousel-btn {
+				width: 45px;
+				height: 45px;
+				background: #333;
+				border: none;
+				border-radius: 50%;
+				color: white;
+				font-size: 24px;
+				cursor: pointer;
+				transition: background 0.3s ease;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.carousel-btn:hover {
+				background: #000;
+			}
+
+
+
+			.indicator {
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background: #ddd;
+				border: none;
+				cursor: pointer;
+				transition: background 0.3s ease;
+			}
+
+			.indicator.active {
+				background: #333;
+			}
+
+			/* Tablet */
+			@media (max-width: 768px) {
+				#portfolio {
+					padding: 40px 15px;
+				}
+
+				.section-title {
+					font-size: 1.6rem;
+				}
+
+				.carousel-slide {
+					padding: 30px 20px;
+					min-height: 450px;
+				}
+
+				.carousel-content {
+					flex-direction: column;
+					gap: 20px;
+				}
+
+				.carousel-image,
+				.carousel-text {
+					width: 100%;
+				}
+
+				.carousel-image img {
+					height: 250px;
+				}
+
+				.carousel-title {
+					font-size: 1.4rem;
+				}
+
+				.carousel-description {
+					font-size: 0.95rem;
+				}
+			}
+
+			/* Mobile */
+			@media (max-width: 480px) {
+				#portfolio {
+					padding: 30px 12px;
+				}
+
+				.section-title {
+					font-size: 1.4rem;
+				}
+
+				.section-subtitle {
+					font-size: 0.9rem;
+				}
+
+				.carousel-slide {
+					padding: 20px 15px;
+					min-height: 500px;
+				}
+
+				.carousel-content {
+					flex-direction: column;
+					gap: 15px;
+				}
+
+				.carousel-image,
+				.carousel-text {
+					width: 100%;
+				}
+
+				.carousel-image img {
+					height: 200px;
+				}
+
+				.carousel-title {
+					font-size: 1.2rem;
+				}
+
+				.carousel-description {
+					font-size: 0.9rem;
+				}
+
+				.carousel-controls {
+					justify-content: center;
+				}
+
+
+
+				/* Responsive */
+				@media (max-width: 768px) {
+					.carousel-counter {
+						font-size: 1rem;
+					}
+
+					.carousel-counter-text {
+						font-size: 0.9rem;
+					}
+				}
+
+				@media (max-width: 480px) {
+					.carousel-counter {
+						font-size: 0.9rem;
+						gap: 10px;
+					}
+
+					.carousel-counter-text {
+						font-size: 0.8rem;
+					}
+				}
+			}
+
+			.carousel-counter {
+				display: block !important;
+				text-align: center !important;
+				margin-top: 15px !important;
+				margin-left: 15% !important;
+				margin-right: auto !important;
+				width: auto !important;
+				padding: 0 !important;
+			}
+
+			.carousel-counter-text {
+				font-size: 1rem !important;
+				color: #666 !important;
+				font-weight: 600 !important;
+				display: inline-block !important;
+			}
+		</style>
 	</header>
 
 	<div id="billboard">
@@ -315,7 +609,8 @@
 						<h2 class="display-1">Roman Albano</h2>
 						<h3 class="py-3">Accounting Undergraduate</h3>
 						<div class="description">
-							<p class="fs-4">Hello! I’m Roman, a tech savy accounting major at Rutgers Business School driven towards success, ignited by self-growth.</p>
+							<p class="fs-4">Hello! I’m Roman, a tech savy accounting major at Rutgers Business School
+								driven towards success, ignited by self-growth.</p>
 						</div>
 						<!-- <a href="#" class="btn btn-primary px-5 py-3 mt-4">Hire me</a> -->
 					</div>
@@ -347,146 +642,212 @@
 
 		</div>
 	</section>
- 
+
 	<section id="portfolio" class="padding-large">
-		<div class="container-fluid" data-aos="fade-up">
-			<div class="row">
-				<div class="section-header text-center">
-					<h3 class="section-title display-6 l">My Personal Branding</h2>
-						<p>Want to know more about me? Click on each image to explore my story.</p>
-				</div>
-
-				<!-- <div id="filters" class="button-group d-flex flex-wrap gap-4 justify-content-center pt-3 pb-5">
-					<a href="#" class="border border-black rounded-pill px-3 py-1 text-uppercase is-checked"
-						data-filter="*">All</a>
-					<a href="#" class="border border-black rounded-pill px-3 py-1 text-uppercase"
-						data-filter=".fashion">Fashion</a>
-					<a href="#" class="border border-black rounded-pill px-3 py-1 text-uppercase"
-						data-filter=".portrait">Portrait</a>
-					<a href="#" class="border border-black rounded-pill px-3 py-1 text-uppercase"
-						data-filter=".urban">Urban</a>
-					<a href="#" class="border border-black rounded-pill px-3 py-1 text-uppercase"
-						data-filter=".events">Events</a>
-				</div>
-			</div> -->
-
-				<div class="grid p-0 clearfix row row-cols-2 row-cols-md-3 row-cols-lg-5">
-				<div class="col mb-4 portfolio-item fashion urban">
-					<a href="images/Volleyball.jpg" class="image-link"
-						title="I played Volleyball all 4 years of highschool. Varsity Volleyball my last two years"><img src="images/Volleyball.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-			
-			
-				
-				<div class="col mb-4 portfolio-item fashion">
-					<a href="images/Comp Sci Club.jpg" class="image-link"
-						title="I was the Vice President of the Computer Science Club for 2 years"><img src="images/Comp Sci Club.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				
-				
-				<div class="col mb-4 portfolio-item portrait events">
-					<a href="images/Robotics.jpg" class="image-link"
-						title="I took an active role Robotics for 3 years of high school. Winning numerous district championships and innovation awards for our robot during the 2023 season"><img src="images/Robotics.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				
-				
-				<div class="col mb-4 portfolio-item fashion">
-					<a href="images/Top 10.jpg" class="image-link"
-						title="After 7 AP courses and numerous honor-level courses, I was placed top 10 of my class"><img src="images/Top 10.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				
-				
-				<div class="col mb-4 portfolio-item urban events">
-					<a href="images/Article.png" class="image-link"
-						title="I was featured in the Clifton Merchant Magazine, where I shared my achievements, motivations, and personal journey."><img src="images/Article.png"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				
-				
-				<div class="col mb-4 portfolio-item fashion portrait events">
-					<a href="images/Code Ninjas.jpg" class="image-link"
-						title="I worked as a Computer Science Instructor at Clifton Code Ninjas for over 2 years, managing 100+ student portfolios and connections with guardians."><img src="images/Code Ninjas.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				
-				
-				<div class="col mb-4 portfolio-item urban">
-					<a href="images/3D Camp.png" class="image-link"
-						title="During my time at Code Ninjas, I lead 10+ summer camp sessions such as 3D Printing. I also instructed events and coordinated such as Chess Club and Public Speaking Classes"><img src="images/3D Camp.png"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				
-				
-				<div class="col mb-4 portfolio-item portrait fashion">
-					<a href="images/NJIT.jpg" class="image-link"
-						title="In Fall 2023, I started my journey as a Computer Science and Mathematics double major"><img src="images/NJIT.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				
-				
-				<div class="col mb-4 portfolio-item urban portrait">
-					<a href="images/FINEST.jpg" class="image-link"
-						title="At NJIT, I joined various clubs such as the Cyber Security Club (NICC), Volleyball Club, and FINEST (Filipinos In Newark), where I met my &quot;lineage&quot;."><img src="images/FINEST.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				
-				
-				<div class="col mb-4 portfolio-item portrait events">
-					<a href="images/Amazon Fresh.jpg" class="image-link"
-						title="I started my journey at the largest Amazon Fresh worldwide in March 2025 and met so many amazing people!"><img src="images/Amazon Fresh.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				
-				
-				<div class="col mb-4 portfolio-item events urban fashion">
-					<a href="images/RBS.jpg" class="image-link"
-						title="In Fall 2025, I officially swapped majors to Accounting at Rutgers Business School Newark"><img src="images/RBS.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-			</div>	
-				<!-- 
-				<div class="col mb-4 portfolio-item events portrait fashion">
-					<a href="images/portfolio-item10.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item1 0."><img src="images/portfolio-thumb-10.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item portrait urban">
-					<a href="images/portfolio-item13.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item1 3."><img src="images/portfolio-thumb-13.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item portrait">
-					<a href="images/portfolio-item14.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item1 4."><img src="images/portfolio-thumb-14.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item fashion portrait urban">
-					<a href="images/portfolio-item15.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item1 5."><img src="images/portfolio-thumb-15.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item events urban fashion">
-					<a href="images/portfolio-item17.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item1 7."><img src="images/portfolio-thumb-17.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item events portrait fashion">
-					<a href="images/portfolio-item18.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item1 8."><img src="images/portfolio-thumb-18.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item urban fashion">
-					<a href="images/portfolio-item16.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item1 6."><img src="images/portfolio-thumb-16.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-			</div> -->
+		<div class="section-header">
+			<h3 class="section-title">My Personal Branding</h3>
+			<p class="section-subtitle">Swipe through my journey and achievements</p>
 		</div>
-	</section> 
+
+		<!-- First Carousel: High School & Post-Secondary -->
+		<h4 class="carousel-label">High School & Post-Secondary</h4>
+		<div class="carousel-container">
+			<div class="carousel-wrapper">
+				<div id="carousel1">
+					<div class="carousel-slide active">
+						<div class="carousel-content">
+							<div class="carousel-image">
+								<img src="images/Volleyball.jpg" alt="Volleyball">
+							</div>
+							<div class="carousel-text">
+								<h3 class="carousel-title">Volleyball</h3>
+								<p class="carousel-description">Played all 4 years of high school. Achieved Varsity
+									status my last two years, developing teamwork and dedication.</p>
+								<p class="carousel-year">High School</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-slide">
+						<div class="carousel-content">
+							<div class="carousel-image">
+								<img src="images/Comp Sci Club.jpg" alt="Computer Science Club">
+							</div>
+							<div class="carousel-text">
+								<h3 class="carousel-title">Computer Science Club</h3>
+								<p class="carousel-description">Served as Vice President for 2 years, leading
+									initiatives and fostering community among tech enthusiasts.</p>
+								<p class="carousel-year">High School</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-slide">
+						<div class="carousel-content">
+							<div class="carousel-image">
+								<img src="images/Robotics.jpg" alt="Robotics">
+							</div>
+							<div class="carousel-text">
+								<h3 class="carousel-title">Robotics</h3>
+								<p class="carousel-description">Active for 3 years with major achievements including
+									district championships and innovation awards during the 2023 season.</p>
+								<p class="carousel-year">High School</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-slide">
+						<div class="carousel-content">
+							<div class="carousel-image">
+								<img src="images/Top 10.jpg" alt="Top 10 Achievement">
+							</div>
+							<div class="carousel-text">
+								<h3 class="carousel-title">Top 10 Academic Achievement</h3>
+								<p class="carousel-description">Completed 7 AP courses and numerous honor-level classes,
+									placing top 10 in my graduating class.</p>
+								<p class="carousel-year">High School</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-slide">
+						<div class="carousel-content">
+							<div class="carousel-image">
+								<img src="images/Article.png" alt="Clifton Merchant Magazine">
+							</div>
+							<div class="carousel-text">
+								<h3 class="carousel-title">Media Feature</h3>
+								<p class="carousel-description">Featured in Clifton Merchant Magazine, sharing my
+									achievements, motivations, and personal journey with the community.</p>
+								<p class="carousel-year">High School</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-slide">
+						<div class="carousel-content">
+							<div class="carousel-image">
+								<img src="images/Code Ninjas.jpg" alt="Code Ninjas">
+							</div>
+							<div class="carousel-text">
+								<h3 class="carousel-title">Code Ninjas Instructor</h3>
+								<p class="carousel-description">Worked as a Computer Science Instructor for 2+ years,
+									managing 100+ student portfolios and maintaining strong guardian connections.</p>
+								<p class="carousel-year">Post-Secondary</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-slide">
+						<div class="carousel-content">
+							<div class="carousel-image">
+								<img src="images/3D Camp.png" alt="Summer Camps">
+							</div>
+							<div class="carousel-text">
+								<h3 class="carousel-title">Summer Camp Leadership</h3>
+								<p class="carousel-description">Led 10+ summer camp sessions including 3D Printing.
+									Coordinated and instructed Chess Club and Public Speaking classes.</p>
+								<p class="carousel-year">Post-Secondary</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-controls">
+					<button class="carousel-btn" onclick="changeSlide('carousel1', -1)">‹</button>
+					<div class="carousel-counter-text">
+						<span id="carousel1-current">1</span> / <span id="carousel1-total">7</span>
+					</div>
+					<button class="carousel-btn" onclick="changeSlide('carousel1', 1)">›</button>
+				</div>
+				<!-- <div class="carousel-controls">
+                    <button class="carousel-btn" onclick="changeSlide('carousel1', -1)">‹</button>
+                    <button class="carousel-btn" onclick="changeSlide('carousel1', 1)">›</button>
+                </div> -->
+
+
+			</div>
+		</div>
+
+		<!-- Second Carousel: University & Professional -->
+		<h4 class="carousel-label">University & Professional</h4>
+		<div class="carousel-container">
+			<div class="carousel-wrapper">
+				<div id="carousel2">
+					<div class="carousel-slide active">
+						<div class="carousel-content">
+							<div class="carousel-image">
+								<img src="images/NJIT.jpg" alt="NJIT">
+							</div>
+							<div class="carousel-text">
+								<h3 class="carousel-title">NJIT - CS & Mathematics</h3>
+								<p class="carousel-description">Started my undergraduate journey as a Computer Science
+									and Mathematics double major, building a strong technical foundation.</p>
+								<p class="carousel-year">Fall 2023</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-slide">
+						<div class="carousel-content">
+							<div class="carousel-image">
+								<img src="images/FINEST.jpg" alt="Campus Clubs">
+							</div>
+							<div class="carousel-text">
+								<h3 class="carousel-title">Campus Involvement</h3>
+								<p class="carousel-description">Joined Cyber Security Club (NICC), Volleyball Club, and
+									FINEST (Filipinos In Newark), building meaningful connections and community.</p>
+								<p class="carousel-year">2023-2024</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-slide">
+						<div class="carousel-content">
+							<div class="carousel-image">
+								<img src="images/Amazon Fresh.jpg" alt="Amazon Fresh">
+							</div>
+							<div class="carousel-text">
+								<h3 class="carousel-title">Amazon Fresh</h3>
+								<p class="carousel-description">Started my professional journey at the largest Amazon
+									Fresh location worldwide, gaining valuable experience and meeting amazing people.
+								</p>
+								<p class="carousel-year">March 2025</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-slide">
+						<div class="carousel-content">
+							<div class="carousel-image">
+								<img src="images/RBS.jpg" alt="Rutgers Business School">
+							</div>
+							<div class="carousel-text">
+								<h3 class="carousel-title">Rutgers Business School</h3>
+								<p class="carousel-description">Officially transitioned to Accounting major at Rutgers
+									Business School Newark, pursuing a new direction in my academic career.</p>
+								<p class="carousel-year">Fall 2025</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-controls">
+					<button class="carousel-btn" onclick="changeSlide('carousel2', -1)">‹</button>
+					<div class="carousel-counter-text">
+						<span id="carousel2-current">1</span> / <span id="carousel2-total">4</span>
+					</div>
+					<button class="carousel-btn" onclick="changeSlide('carousel2', 1)">›</button>
+				</div>
+
+
+
+			</div>
+		</div>
+	</section>
+
+
+
 
 	<section id="services" class="padding-large bg-primary">
 		<div class="container text-white text-white-50 " data-aos="fade-up">
@@ -500,7 +861,8 @@
 							<use xlink:href="#random-1"></use>
 						</svg>
 						<h4 class="text-capitalize my-3">Financial Metrics Tracker Application</h4>
-						<p>Developed a SQL-powered dashboard that tracks financial metrics, includes customizable company watchlists, and offers admin controls to support smarter investment decisions.</p>
+						<p>Developed a SQL-powered dashboard that tracks financial metrics, includes customizable
+							company watchlists, and offers admin controls to support smarter investment decisions.</p>
 					</div>
 				</div>
 				<div class="col-md-3 aos-init aos-animate" data-aos="fade-in" data-aos-delay="300">
@@ -509,7 +871,9 @@
 							<use xlink:href="#random-2"></use>
 						</svg>
 						<h4 class="text-capitalize my-3">Rutgers Accounting Society</h4>
-						<p>Active member of the Rutgers Accounting Society, engaging in volunteer work, networking events, and professional workshops, while pursuing a committee role as a path toward future e-board leadership.</p>
+						<p>Active member of the Rutgers Accounting Society, engaging in volunteer work, networking
+							events, and professional workshops, while pursuing a committee role as a path toward future
+							e-board leadership.</p>
 					</div>
 				</div>
 				<div class="col-md-3 aos-init aos-animate" data-aos="fade-in" data-aos-delay="600">
@@ -518,7 +882,9 @@
 							<use xlink:href="#random-3"></use>
 						</svg>
 						<h4 class="text-capitalize my-3">Strong Communication and Customer Service Skills</h4>
-						<p>Developed strong communication and customer service skills through roles at Amazon Fresh, teaching and mentoring at Code Ninjas, and leadership experience as Vice President of the Computer Science Club.</p>
+						<p>Developed strong communication and customer service skills through roles at Amazon Fresh,
+							teaching and mentoring at Code Ninjas, and leadership experience as Vice President of the
+							Computer Science Club.</p>
 					</div>
 				</div>
 				<div class="col-md-3 aos-init aos-animate" data-aos="fade-in" data-aos-delay="900">
@@ -527,7 +893,9 @@
 							<use xlink:href="#random-4"></use>
 						</svg>
 						<h4 class="text-capitalize my-3">Excel Certified | Developing Skills, Delivering More</h4>
-						<p>Excel Certified in Essential Training, actively building skills through coursework, certifications, campus involvement, networking, and independent projects after transferring to RBS.</p>
+						<p>Excel Certified in Essential Training, actively building skills through coursework,
+							certifications, campus involvement, networking, and independent projects after transferring
+							to RBS.</p>
 					</div>
 				</div>
 			</div>
@@ -587,40 +955,65 @@
 						<div class="meta-tags text-uppercase text-gray d-flex gap-3 fs-6 mb-3 align-items-center">
 							<span class="meta-date">Sept.15.2025</span>
 							<span>ᐧ</span>
-							<span class="meta-category"><a href="#">Trends</a></span>
+							<span class="meta-category"><a href="#">Values</a></span>
 						</div>
 						<h3 class="post-title mb-3"><a href="single.html">An Upwards Trend</a></h3>
-						<p>An Upwards Trend reflects my commitment to accelerating growth, outpacing competition, and surpassing my own expectations. Though the transition to a new school, major, and professional network brings uncertainty, my determination to succeed is stronger than my doubts—and I’m prepared to put in the work to make it happen.</p>
+						<p>An Upwards Trend reflects my commitment to accelerating growth, outpacing competition, and
+							surpassing my own expectations. Though the transition to a new school, major, and
+							professional network brings uncertainty, my determination to succeed is stronger than my
+							doubts—and I’m prepared to put in the work to make it happen.</p>
 					</div>
 				</div><!--post-item-->
-
-				<!-- <div class="col-md-6">
-					<div class="post-content mb-5">
-						<div class="meta-tags text-uppercase text-gray d-flex gap-3 fs-6 mb-3 align-items-center">
-							<span class="meta-date">Jan.30.2020</span>
-							<span>ᐧ</span>
-							<span class="meta-category"><a href="#">Trends</a></span>
-						</div>
-						<h3 class="post-title mb-3"><a href="single.html">Simple Tips & Tricks Of Photography</a>
-						</h3>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-							has been the industry's standard dummy text ever.</p>
-					</div>
-				</div>
 
 				<div class="col-md-6">
 					<div class="post-content mb-5">
 						<div class="meta-tags text-uppercase text-gray d-flex gap-3 fs-6 mb-3 align-items-center">
-							<span class="meta-date">Jan.30.2020</span>
+							<span class="meta-date">Oct.15.2025</span>
 							<span>ᐧ</span>
-							<span class="meta-category"><a href="#">Collections</a></span>
+							<span class="meta-category"><a href="#">Updates</a></span>
 						</div>
-						<h3 class="post-title mb-3"><a href="single.html">World's Top Photograph Collections</a>
+						<h3 class="post-title mb-3"><a href="single.html">Hit the Ground Running!</a>
 						</h3>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-							has been the industry's standard dummy text ever.</p>
+						<p>This past month, I’ve hit the ground running at Rutgers Business School by joining the
+							Rutgers Accounting Society as a Committee Member, connecting with other club leaders, and
+							volunteering as a Site Leader during Rutgers Community Day. Through these experiences and by
+							attending numerous networking events both on campus and in New York,
+							I’ve built a strong foundation for my growth in the business community.
+						</p>
 					</div>
 				</div>
+
+
+				<div class="col-md-6">
+					<div class="post-content mb-5">
+						<div class="meta-tags text-uppercase text-gray d-flex gap-3 fs-6 mb-3 align-items-center">
+							<span class="meta-date">Oct.19.2025</span>
+							<span>ᐧ</span>
+							<span class="meta-category"><a href="#">Career Journey</a></span>
+						</div>
+						<h3 class="post-title mb-3"><a href="single.html">Why Accounting?</a>
+						</h3>
+						<p>Many people have asked me, “Why did you switch to Accounting?” With such a strong background
+							in Computer Science, making this life-changing decision wasn’t easy. My older brother first
+							introduced me to Accounting by sharing his own experiences in the field, which gave me a new
+							perspective on how numbers and structure drive business decisions.
+						</p>
+						<p>Even though I had already finished my sophomore year and was double majoring in Computer
+							Science and Mathematics, I realized that my skills wouldn’t go to waste. The growth of
+							technology is inevitable, and my background in math and coding naturally complements the
+							precision and logic that Accounting requires. Both fields are rule-based and analytical, and
+							I knew those strengths would serve me well.
+						</p>
+						<p>One of the biggest reasons I made the switch was because I wasn’t drawn to the job-hopping
+							culture that’s so common in Computer Science. I wanted to find a workplace where I could
+							grow steadily, build strong relationships, and move up alongside the company—maybe even one
+							day becoming a partner. I also wanted a career that offered more client interaction while
+							still allowing me to work at a computer. Since I truly enjoy networking and speaking with
+							others, Accounting felt like the perfect fit.</p>
+						</p>
+					</div>
+				</div>
+				<!-- 
 				<div class="col-md-6">
 					<div class="post-content mb-5">
 						<div class="meta-tags text-uppercase text-gray d-flex gap-3 fs-6 mb-3 align-items-center">
@@ -640,7 +1033,7 @@
 				<a href="#" class="btn btn-primary px-5 py-3">View All Blog</a>
 			</div> -->
 
-		</div>
+			</div>
 	</section>
 
 	<section id="contact" class="contact-detail ">
@@ -657,9 +1050,9 @@
 
 						<p>I would love to get suggestions from you.</p>
 						<div class="contact-info">
-  <p>Have questions? Email me directly:</p>
-  <a href="mailto:roman.albano@rutgers.edu" class="btn btn-primary px-5 py-3">Email Me</a>
-</div>
+							<p>Have questions? Email me directly:</p>
+							<a href="mailto:roman.albano@rutgers.edu" class="btn btn-primary px-5 py-3">Email Me</a>
+						</div>
 
 						<!-- <form id="form" class="form-group" action="contact_form.php" method="post">
 							<div class="text-input row">
@@ -688,63 +1081,95 @@
 			</div>
 		</div>
 	</section>
+	<script>
+		const carousels = {
+			carousel1: { current: 0, total: 7 },
+			carousel2: { current: 0, total: 4 }
+		};
 
-	<footer id="footer" class="bg-primary">
-		<div class="container padding-large text-white text-white-50">
-			<div class="row">
-				<div class="footer-menu col-md-4">
-					<h3 class="widget-title section-title-light">Get In Touch</h3>
-					<ul class="list-unstyled">
-						<li><a href="mailto:romanalbano411@gmail.com">roman.albano@rutgers.edu</a></li>
-						<li></li>
-					</ul>
-				</div>
-				<div class="footer-menu col-md-4">
-					<h3 class="widget-title section-title-light">Location</h3>
-					<ul class="list-unstyled" id="footer-menu">
-						<li>Based in New Jersey, USA</li>
-					</ul>
-				</div>
-				<div class="footer-menu social-links col-md-4">
-					<h3 class="widget-title section-title-light">My social links</h3>
-					<ul class="list-unstyled d-flex gap-4">
-						<li>
-							<a href="https://www.linkedin.com/in/romanalbano/"> <svg class="" width="30" height="30" fill="#0A66C2">
-									<use xlink:href="#linkedin"></use>
-								</svg>
-							</a>
-							
-						</li>
-						<li>
-							<a href="https://github.com/RomanAlbano"> <svg class="" width="30" height="30" fill="black">
-									<use xlink:href="#github"></use>
-								</svg>
-							</a>
-						</li>
-						
+		function changeSlide(carouselId, direction) {
+			const carousel = carousels[carouselId];
+			carousel.current = (carousel.current + direction + carousel.total) % carousel.total;
+			updateCarousel(carouselId);
+		}
 
-					</ul>
-				</div>
-			</div><!--footer-content-->
-		</div>
-		<div class="footer-bottom border-top">
-			<div class="container text-white text-white-50">
-				<div class="copyright text-center py-4">
-					
-					
-				</div>
+		function updateCarousel(carouselId) {
+			const carousel = carousels[carouselId];
+			const slides = document.querySelectorAll(`#${carouselId} .carousel-slide`);
+
+			// Update slides
+			slides.forEach((slide, index) => {
+				slide.classList.remove('active');
+				if (index === carousel.current) {
+					slide.classList.add('active');
+				}
+			});
+
+			// Update counter display
+			const currentEl = document.getElementById(`${carouselId}-current`);
+			if (currentEl) {
+				currentEl.textContent = carousel.current + 1;
+			}
+		}
+	</script>
+</body>
+<footer id="footer" class="bg-primary">
+	<div class="container padding-large text-white text-white-50">
+		<div class="row">
+			<div class="footer-menu col-md-4">
+				<h3 class="widget-title section-title-light">Get In Touch</h3>
+				<ul class="list-unstyled">
+					<li><a href="mailto:roman.albano@rutgers.edu">roman.albano@rutgers.edu</a></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="footer-menu col-md-4">
+				<h3 class="widget-title section-title-light">Location</h3>
+				<ul class="list-unstyled" id="footer-menu">
+					<li>Based in New Jersey, USA</li>
+				</ul>
+			</div>
+			<div class="footer-menu social-links col-md-4">
+				<h3 class="widget-title section-title-light">My social links</h3>
+				<ul class="list-unstyled d-flex gap-4">
+					<li>
+						<a href="https://www.linkedin.com/in/romanalbano/"> <svg class="" width="30" height="30"
+								fill="#0A66C2">
+								<use xlink:href="#linkedin"></use>
+							</svg>
+						</a>
+
+					</li>
+					<li>
+						<a href="https://github.com/RomanAlbano"> <svg class="" width="30" height="30" fill="black">
+								<use xlink:href="#github"></use>
+							</svg>
+						</a>
+					</li>
+
+
+				</ul>
+			</div>
+		</div><!--footer-content-->
+	</div>
+	<div class="footer-bottom border-top">
+		<div class="container text-white text-white-50">
+			<div class="copyright text-center py-4">
+
+
 			</div>
 		</div>
-	</footer>
+	</div>
+</footer>
 
-	<script src="js/jquery-1.11.0.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-		crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-	<script type="text/javascript" src="js/plugins.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+	crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="js/plugins.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
-</body>
+
 
 </html>
