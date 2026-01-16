@@ -297,9 +297,6 @@
 
 			<nav id="navbar">
 				<input id="menu-toggle" type="checkbox" />
-				<label class="menu-btn" for="menu-toggle">
-					<span></span>
-				</label>
 			</nav>
 
 		</div>
@@ -657,6 +654,21 @@
 					<div class="carousel-slide active">
 						<div class="carousel-content">
 							<div class="carousel-image">
+								<img src="images/Volunteering Award.png" alt="Elite Recognition Award">
+							</div>
+							<div class="carousel-text">
+								<h3 class="carousel-title">Elite Recognition Accolade</h3>
+								<p class="carousel-description"> Awarded to two volunteers per semester, the Rutgers Accounting Society granted me the "Elite 
+									Service Recognition" award for exceptional volunteering efforts throughout the Fall 2025 Semester
+								</p>
+								<p class="carousel-year">Fall 2025</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-slide">
+						<div class="carousel-content">
+							<div class="carousel-image">
 								<img src="images/VTM.png" alt="Volunteer of the Month Image">
 							</div>
 							<div class="carousel-text">
@@ -692,7 +704,7 @@
 				<div class="carousel-controls">
 					<button class="carousel-btn" onclick="changeSlide('carousel3', -1)">‹</button>
 					<div class="carousel-counter-text">
-						<span id="carousel3-current">1</span> / <span id="carousel3-total">2</span>
+						<span id="carousel3-current">1</span> / <span id="carousel3-total">3</span>
 					</div>
 					<button class="carousel-btn" onclick="changeSlide('carousel3', 1)">›</button>
 				</div>
@@ -1140,7 +1152,7 @@
 		const carousels = {
 			carousel1: { current: 0, total: 7 },
 			carousel2: { current: 0, total: 4 },
-			carousel3: { current: 0, total: 2 }
+			carousel3: { current: 0, total: 3 }
 		};
 
 		function changeSlide(carouselId, direction) {
